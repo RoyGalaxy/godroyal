@@ -1,0 +1,124 @@
+/*! Imprting Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*! reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/** Main code starts here */
+.container{
+    height: 100vh;
+    width: 100%;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+header{
+    position: fixed;
+    top: 0; left: 0;
+    height: 3.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: #008cf9;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    
+}
+.heading{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+}
+.logo{
+    height: 2.75rem;
+    width: 2.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.body{
+    height: calc(100vh - 3.75rem);
+    overflow-y: auto;
+    width: 100%;
+    background: transparent;
+    margin-top: 3.75rem;
+}
+.section-label{
+    margin-top: 1.5rem;
+    background: #008cf9;
+    height: 2rem;
+    width: 100%;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+}
+.label{
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    color: #333;
+    letter-spacing: 0;
+    padding:10px;
+}
+.label span{
+    font-weight: bold;
+    color: #008cf9;
+}
+.btn{
+    display: block;
+    height: 3.75rem;
+    width: 60%;
+    max-width: 300px;
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: grid;
+    place-items: center;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    background: hsl(0,70%,53%);
+}
+.video{
+    width: 90%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid #0088ff;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+}
+.notification{
+    display: none;
+    position: fixed;
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+    border: 2px solid #ddd;
+    color: #fff;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 300ms ease-in-out;
+}
+.notification .heading{
+    letter-spacing: 0;
+}
+.close{
+    background: transparent;
+    width: fit-content;
+    height: 1rem;
+    font-size: 0.75rem;
+    color: #ddd;
+}
